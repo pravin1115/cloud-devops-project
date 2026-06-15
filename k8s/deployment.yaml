@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-devops-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cloud-devops-app
+  template:
+    metadata:
+      labels:
+        app: cloud-devops-app
+    spec:
+      containers:
+      - name: cloud-devops-app
+        image: pravin1502/cloud-devops-app:v1
+        ports:
+        - containerPort: 5000
