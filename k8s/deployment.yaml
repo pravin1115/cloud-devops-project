@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: cloud-devops-app
-        image: pravin1502/cloud-devops-app:v1
+        image: pravin1502/cloud-devops-app:v2
         ports:
         - containerPort: 5000
